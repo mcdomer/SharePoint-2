@@ -1,6 +1,6 @@
 # Change List Schema to unhide order field.
-$siteUrl = $args[0];    #"https://inseewisdom.siamcitycement.com";
-$listTitle = $args[1];  #"IDCSession";
+$siteUrl = $args[0];    #"<site>";
+$listTitle = $args[1];  #"<list>";
 
 $site = Get-SPSite -Identity $siteUrl;
 $web = $site.OpenWeb();

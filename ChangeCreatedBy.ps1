@@ -1,5 +1,5 @@
-$url = "https://inseewisdom.siamcitycement.com/"
-$listName = "KnowledgeAssets"
+$url = "<site>"
+$listName = "<list>"
 $itemID = "";
  
 #Get the appropriate list from the web
@@ -16,7 +16,7 @@ Write-Output ("item created by {0} on {1}" -f $item["Author"].tostring(), $item[
 Write-Output ("item last modified by {0} on {1}" -f $item["Editor"].tostring(), ($item["Modified"] -f "dd-MM-yyyy"))
  
 #Set the created by values
-$userLogin = "ap\weeracha"
+$userLogin = "<user>"
 $dateToStore = Get-Date "10/02/1984"
  
 $user = $web.EnsureUser($userLogin) #$user = Get-SPUser -Web $web | ? {$_.userlogin -eq $userLogin}

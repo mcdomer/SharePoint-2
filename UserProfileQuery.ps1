@@ -1,5 +1,4 @@
-$mySiteUrl = $args[0] #"https://inseewisdom.siamcitycement.com"
-#$mySiteUrl = "https://inseewisdom.siamcitycement.com"
+$mySiteUrl = $args[0] #"<site>"
 
 #Get site objects and connect to User Profile Manager service
 $site = Get-SPSite $mySiteUrl

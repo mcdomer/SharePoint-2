@@ -1,6 +1,6 @@
 
 # Add "Change item Order" button at target List
-$siteUrl = "https://inseewisdom.siamcitycement.com";
+$siteUrl = "<site>";
 $listTitle = "IDCSession";
 $site = Get-SPSite -Identity $siteUrl;
 $web = $site.OpenWeb();

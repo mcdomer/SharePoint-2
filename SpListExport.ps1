@@ -1,12 +1,12 @@
-Add-PSSnapin Microsoft.SharePoint.PowerShell –ErrorAction SilentlyContinue
+Add-PSSnapin Microsoft.SharePoint.PowerShell ï¿½ErrorAction SilentlyContinue
   
 #Variables
-$SiteUrl="http://eoffice-edoc.si.mahidol.ac.th/edoc"
+$SiteUrl="<site>"
 $OutPutFile = "C:\Scripts\Export\ExList.csv"
   
 #Get Web and User Information List
 $web = Get-SPWeb $SiteUrl
-$list = $web.Lists["QualityDocMgt"]
+$list = $web.Lists["<list>"]
 Write-host "Total Number of Items Found:"$list.Itemcount
  
 #Array to Hold Result - PSObjects

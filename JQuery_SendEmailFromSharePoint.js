@@ -1,7 +1,7 @@
 function sendEmail(from, to, body, subject) {
     //Get the relative url of the site
     
-    var urlTemplate = "https://toyotaleasingthailand.sharepoint.com/_api/SP.Utilities.Utility.SendEmail";
+    var urlTemplate = "<site>/_api/SP.Utilities.Utility.SendEmail";
     $.ajax({
         contentType: 'application/json',
         url: urlTemplate,

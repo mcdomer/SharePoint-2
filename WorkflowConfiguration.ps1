@@ -8,8 +8,7 @@ $oldDocNo = ""
 
 $logFileName = ".\log\" + $listName + "_" + $(Get-Date -Format "yyyyMMddHHmmss") + '.txt'
 $csvData = Import-Csv $filePath -Delimiter $delimeter -Encoding UTF8
-$web = Get-SPWeb "http://eoffice.sihmis.si/edoc"
-#$web = Get-SPWeb "http://eoffice-edoc.si.mahidol.ac.th/edoc"
+$web = Get-SPWeb "<site>"
 $list = $web.Lists[$listName]
 
 $SubjectList = $web.Lists["Subject"]

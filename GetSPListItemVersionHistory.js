@@ -1,7 +1,7 @@
 $().SPServices({
   operation: "GetVersionCollection",
   async: false,
-  strlistID: "ITRequest",
+  strlistID: "<list name>",
   strlistItemID: 210,
   strFieldName: "Editor",
   completefunc: function(xData, Status) {

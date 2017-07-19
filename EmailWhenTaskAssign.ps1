@@ -1,5 +1,5 @@
 
-$web=Get-SPWeb $args[0] #https://inseewisdom.siamcitycement.com/sites/inseecommunity/ictest10
+$web=Get-SPWeb $args[0] #<site>
 $list=$web.Lists.TryGetList("Activities")
 if($list -ne $null)
 {
